@@ -6,10 +6,7 @@ import Single from "./Pages/singleUser/Single";
 import New from "./Pages/new/New";
 
 import {
-  createBrowserRouter,
-  RouterProvider,
   Route,
-  Link,
   Routes,
 } from "react-router-dom";
 
