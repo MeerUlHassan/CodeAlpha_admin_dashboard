@@ -12,66 +12,76 @@ import PsychologyAltOutlinedIcon from "@mui/icons-material/PsychologyAltOutlined
 import SettingsIcon from "@mui/icons-material/Settings";
 import SupervisedUserCircleOutlinedIcon from "@mui/icons-material/SupervisedUserCircleOutlined";
 import LogoutIcon from "@mui/icons-material/Logout";
+import { Link } from "react-router-dom";
+
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <spaan className="logo">MesTech</spaan>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <spaan className="logo">MesTech</spaan>
+        </Link>
       </div>
       <hr />
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
           <li>
-            <DashboardIcon className='icons' />
-            <span>Dashboard</span>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <DashboardIcon className="icons" />
+              <span>Dashboard</span>
+            </Link>
           </li>
           <p className="title">LISTS</p>
           <li>
-            <PeopleAltOutlinedIcon className='icons' />
-            <span>Users</span>
+            <Link to="/users" style={{ textDecoration: "none" }}>
+              <PeopleAltOutlinedIcon className="icons" />
+              <span>Users</span>
+            </Link>
           </li>
           <li>
-            <CategoryOutlinedIcon className='icons' />
-            <span>Products</span>
+            <Link to="/product" style={{ textDecoration: "none" }}>
+              <CategoryOutlinedIcon className="icons" />
+              <span>Products</span>
+            </Link>
           </li>
           <li>
-            <ListAltIcon className='icons' />
+            <ListAltIcon className="icons" />
             <span>Orders</span>
           </li>
           <li>
-            <LocalShippingOutlinedIcon className='icons' />
+            <LocalShippingOutlinedIcon className="icons" />
             <span>Delivery</span>
           </li>
           <p className="title">USEFUL</p>
           <li>
-            <StackedLineChartIcon className='icons' />
+            <StackedLineChartIcon className="icons" />
             <span>Stats</span>
           </li>
           <li>
-            <NotificationsActiveOutlinedIcon className='icons' />
+            <NotificationsActiveOutlinedIcon className="icons" />
             <span>Notifications</span>
           </li>
           <p className="title">SERVICE</p>
           <li>
-            <HealthAndSafetyIcon className='icons' />
+            <HealthAndSafetyIcon className="icons" />
             <span>System Health</span>
           </li>
           <li>
-            <PsychologyAltOutlinedIcon className='icons' />
+            <PsychologyAltOutlinedIcon className="icons" />
             <span>Logs</span>
           </li>
           <li>
-            <SettingsIcon className='icons' />
+            <SettingsIcon className="icons" />
             <span>Settings</span>
           </li>
           <p className="title">USER</p>
           <li>
-            <SupervisedUserCircleOutlinedIcon className='icons' />
+            <SupervisedUserCircleOutlinedIcon className="icons" />
             <span>Profile</span>
           </li>
           <li>
-            <LogoutIcon className='icons' />
+            <LogoutIcon className="icons" />
             <span>Logout</span>
           </li>
         </ul>
