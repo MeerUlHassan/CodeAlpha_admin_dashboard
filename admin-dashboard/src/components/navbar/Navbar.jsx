@@ -7,11 +7,11 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 import Photo from '../../assests/sm-dp.jpg'
-// import { DarkModeContext } from "../../context/darkModeContext";
-// import { useContext } from "react";
+import { DarkModeContext } from "../../context/darkModeContext";
+import { useContext } from "react";
 
 const Navbar = () => {
-  // const { dispatch } = useContext(DarkModeContext);
+  const { dispatch } = useContext(DarkModeContext);
 
   return (
     <div className="navbar">
@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="item">
             <DarkModeOutlinedIcon
               className="icon"
-              // onClick={() => dispatch({ type: "TOGGLE" })}
+              onClick={() => dispatch({ type: "TOGGLE" })}
             />
           </div>
           <div className="item">
