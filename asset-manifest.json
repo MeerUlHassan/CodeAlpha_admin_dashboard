@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/CodeAlpha_admin_dashboard/static/css/main.f632b192.css",
+    "main.js": "/CodeAlpha_admin_dashboard/static/js/main.7958c5af.js",
+    "static/media/sm-dp.jpg": "/CodeAlpha_admin_dashboard/static/media/sm-dp.e15b5ae00c1b1415b8e3.jpg",
+    "index.html": "/CodeAlpha_admin_dashboard/index.html",
+    "main.f632b192.css.map": "/CodeAlpha_admin_dashboard/static/css/main.f632b192.css.map",
+    "main.7958c5af.js.map": "/CodeAlpha_admin_dashboard/static/js/main.7958c5af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f632b192.css",
+    "static/js/main.7958c5af.js"
+  ]
+}
